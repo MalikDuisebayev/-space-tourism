@@ -39,6 +39,21 @@ button
     cursor: pointer
     color: inherit
 
+.button
+    font-size: 18px
+    line-height: 21px
+    text-transform: uppercase
+    border: 1px solid #fff
+    padding: 20px 45px
+
+.title
+    font-family: 'spaceagecyrillic'
+    padding: 100px 0
+    font-size: 48px
+    line-height: 48px
+    font-weight: 400
+
+
 body
     color: #fff
     font-family: 'SF-Pro-Display'
@@ -127,6 +142,159 @@ body
         line-height: 17px
     &__description-text + &__description-text
         margin-left: 52px
+
+.about
+    background-image: url('../images/about-bg.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    &__item
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding-bottom: 150px
+    &__item:nth-child(odd)
+        flex-direction: row-reverse
+    &__img
+        max-width: 100%
+    &__content
+        width: 600px
+    &__content-title
+        font-weight: bold
+        font-size: 30px
+        line-height: 36px
+        margin-bottom: 5px
+    &__content-subtitle
+        font-size: 12px
+        line-height: 14px
+        text-transform: uppercase
+        color: #036CCA
+        margin-bottom: 30px
+    &__content-text
+        display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+        p
+            font-size: 16px
+            line-height: 19px
+            width: 165px
+    &__table
+        margin-bottom: 50px
+    &__table-caption
+        font-size: 12px
+        line-height: 14px
+        color: #E5E5E5
+        caption-side: bottom
+        margin-top: 20px
+        text-align: left
+    &__table-tr
+        border: 1px solid #fff
+        border-right: none
+        border-left: none
+    &__table-tr + &__table-tr
+        font-size: 36px
+        line-height: 43px
+        font-weight: bold
+        text-align: center
+    &__table-td
+        padding: 10px 30px 10px 0
+        span
+            font-size: 14px
+            line-height: 17px
+            display: block
+
+.how-to
+    background-image: url('../images/how-to-bg.jpg')
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    padding-bottom: 100px
+    &__box
+        text-align: center
+        circle,text,foreignObject
+            transition: all 0.5s ease-in-out
+            cursor: pointer
+            font-size: 18px
+        g:hover circle
+            r: 20
+            fill: #036CCA
+        g:hover text
+            fill: #036CCA
+            font-size: 36px
+        g:hover foreignObject
+            color: #036CCA
+            font-size: 22px
+    foreignObject
+        text-align: left 
+
+.to-book
+    background-image: url('../images/toBook-bg.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    min-height: 100vh
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__text
+        width: 165px
+        font-size: 14px
+        margin-top: 100px
+        line-height: 17px
+        margin-left: auto
+        margin-right: 52px
+    &__text + &__text
+        margin-right: 0
+        margin-left: 0
+.info
+    background-image: url('../images/info-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    backgraund-position: top center
+    padding-bottom: 100px
+
+.special-offer
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 500px
+    &__item-box
+        border: 1px solid #fff
+        margin-bottom: 25px
+        padding: 40px 75px
+        text-align: center
+
+        min-height: 400px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__item-text
+        font-size: 24px
+        line-height: 29px
+        width: 236px
+        margin: 0 auto
+        span
+            color: #CB0E0E
+    &__old-price
+        text-align: right
+        font-size: 14px
+        line-height: 17px
+        position: relative
+    &__old-price::before
+        content: ''
+        position: absolute
+        background-color: red
+        top: 7px
+        right: 0
+        width: 68px
+        height: 1px
+        transform: rotate(15deg)
+    &__new-price
+        font-size: 48px
+        line-height: 57px
+    &__btn
+        width: 100%
 
 
 
