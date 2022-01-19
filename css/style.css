@@ -450,4 +450,110 @@ body {
 .special-offer__btn {
   width: 100%;
 }
+
+.services {
+  padding-bottom: 200px;
+}
+
+.services__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__box-list {
+  width: 620px;
+  margin-right: 80px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.services__list-title {
+  margin-bottom: 25px;
+}
+
+.services__list {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.services__list-item {
+  padding-left: 36px;
+  position: relative;
+}
+
+.services__list-item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 0;
+  top: 4px;
+}
+
+.services__description {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.services__btn {
+  width: 100%;
+}
+
+.services__btn--first {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.services__btn--first::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 43px;
+  background-image: url("../images/spaceMan.png");
+  width: 192px;
+  height: 150px;
+}
+
+.slider {
+  text-align: center;
+}
+
+.slider__inner {
+  margin-bottom: 50px;
+  border: 1px solid #fff;
+  padding: 100px 0;
+}
+
+.slider__description {
+  font-family: 'spaceagecyrillic';
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.slider__box-img {
+  margin: 0 auto;
+  max-width: 800px;
+  max-height: 450px;
+}
+
+.slider__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+}
+
+.slider__arrow-left {
+  left: 75px;
+}
+
+.slider__arrow-right {
+  right: 75px;
+}
 /*# sourceMappingURL=style.css.map */
