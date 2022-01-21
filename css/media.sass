@@ -1,0 +1,237 @@
+@media (max-width: 1160px)
+    .title
+        text-align: center
+    .about
+        &__content
+            display: flex
+            flex-direction: column
+        &__item
+            justify-content: center
+        &__img
+            margin-bottom: 24px
+    .contacts
+        &__inner
+            flex-direction: column
+            align-items: center
+        &__
+
+@media (max-width: 1050px)
+    .special-offer__inner
+        gap: 20px
+
+@media (max-width: 1024px)
+    .login
+        margin-right: 0
+    .to-book
+        background-position: center left
+        &__inner
+            display: block
+        &__text
+            width: 100%
+            margin: 0 0 40px
+    .slider
+        &__box-img
+            width: 100%
+            height: 410px
+        
+
+@media (max-width: 895px)
+    .header__top
+        padding-top: 30px
+    .menu__btn
+        display: block
+    .menu__list
+        transform: translateY(-150%)
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        background-color: #000
+        padding-top: 90px
+        padding-bottom: 30px
+        width: 100%
+        text-align: center
+        transition: all 0.5s
+    .menu__list.active
+        transform: translateY(0)
+    .menu__item
+        padding: 15px 0
+    .menu__link
+        display: block
+    .phone,.login
+        position: relative
+        z-index: 20px
+    .header__content
+        margin: 0 auto
+    .header__description
+        justify-content: center
+    .header
+        background-position: center right
+    .title
+        text-align: center
+        padding: 50px 0
+    .about
+        &__content
+            display: flex
+            flex-direction: column
+        &__item
+            justify-content: center
+        &__img
+            margin-bottom: 24px
+    .slider
+        &__box-img
+            width: 100%
+            height: 410px
+        &__arrow-left,
+            display: none
+        &__arrow-right
+            display: none
+        
+
+@media (max-width: 870px)
+    .how-to
+        &__box
+           display: none
+        &__list
+            display: block
+            list-style: none
+        &__item
+            border-left: 1px solid #fff
+            padding-left: 20px
+            padding-bottom: 30px
+            margin-left: 20px
+            position: relative
+        &__item:last-child
+            border-left: none
+        &__item::before
+            content: ''
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            background-color: #fff
+            top: 0
+            left: -10px
+            position: absolute
+@media (max-width: 895px)
+    .services__buttons
+        margin-top: 75px
+
+@media (max-width: 820px)
+    .special-offer
+        &__inner
+            flex-direction: column
+            align-items: center
+        &__item
+            width: 100%
+    .services
+        &__inner
+            flex-direction: column
+        &__buttons
+            margin-top: 170px
+            text-align: center
+        &__btn
+            width: 100%
+        &__box-list
+            width: 100% 
+            font-size: 17px
+    .slider
+        &__arrow-left
+
+@media (max-width: 650px)
+    .title
+        font-size: 24px
+    .header
+        &__title
+            font-size: 34px
+            line-height: 30px
+            span
+                font-size: 63px
+        &__content
+            text-align: center
+        &__text
+            justify-content: center
+            font-size: 18px
+            p
+                padding: 0 10px
+        &__btn
+            width: 90%
+            font-size: 18px
+        &__description
+            display: block
+        &__description-text
+            width: 100%
+        &__description-text + &__description-text
+            margin-left: 0
+            margin-top: 20px
+    .about
+        &__content-text
+            display: block
+            p
+               width: 100%
+               margin-bottom: 20px 
+
+@media (max-width: 620px)
+    .about
+        &__table-tr
+            font-size: 14px
+        
+        &__table-tr + &__table-tr
+            font-size: 22px
+    .footer
+        background-position: top left
+        padding-bottom: 50px
+        text-align: center
+        &__inner
+            flex-direction: column
+            align-items: center
+        &__text
+            width: 100%
+            margin-right: 0
+        &__text p + p
+            margin-top: 10px
+            margin-bottom: 30px
+        &__menu
+            width: 100%
+            margin: 0
+
+@media ( max-width: 572px )
+    .about__table-tr:first-child
+        display: none
+    .about__table-td
+        display: block
+        text-align: right
+        span
+            display: inline-block
+    .about__table-td::before
+        content: attr(aria-label)
+        float: left
+    .about__table-td
+        padding: 0
+    .slider
+        &__box-img
+            height: 300px
+        &__inner
+            padding: 50px 0
+    
+
+@media (max-width: 375px)
+    .header
+        &__title
+            font-size: 25px
+            span
+                font-size: 52px
+        &__btn
+            width: 90%
+            font-size: 16px
+    .phone
+        font-size: 17px
+    .about
+        &__table-tr
+            font-size: 12px
+        
+        &__table-tr + &__table-tr
+            font-size: 18px
+        &__table-td
+            padding: 0
+    

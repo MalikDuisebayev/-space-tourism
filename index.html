@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -19,6 +20,9 @@
       <div class="header__inner">
         <div class="header__top">
           <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+            </button>
             <ul class="menu__list">
               <li class="menu__item"><a  class="menu__link" href="#">О НАС </a></li>
               <li class="menu__item"><a  class="menu__link" href="#">СТОИМОСТЬ</a></li>
@@ -91,14 +95,14 @@
                 <td class="about__table-td">вернешься?</td>
               </tr>
               <tr class = 'about__table-tr'>
-                <td class="about__table-td">1 <span>час</span></td>
-                <td class="about__table-td">80 <span>км</span></td>
-                <td class="about__table-td">4-5 <span>мин</span></td>
-                <td class="about__table-td">250 <span>тыс.дол</span></td>
-                <td class="about__table-td">99 <span>%</span></td>
+                <td aria-label="время в пути" class="about__table-td">1 <span>час</span></td>
+                <td aria-label="расстояние" class="about__table-td">80 <span>км</span></td>
+                <td aria-label="в невесомости" class="about__table-td">4-5 <span>мин</span></td>
+                <td aria-label="стоимость" class="about__table-td">250 <span>тыс.дол</span></td>
+                <td aria-label="вернешься?" class="about__table-td">99 <span>%</span></td>
               </tr>
             </table>
-            <button class="button">Забронировать полет</button>
+            <button class="button about__btn">Забронировать полет</button>
           </div>
         </div>
 
@@ -125,19 +129,17 @@
                 <td class="about__table-td">вернешься?</td>
               </tr>
               <tr class = 'about__table-tr'>
-                <td class="about__table-td">10 <span>мин</span></td>
-                <td class="about__table-td">100 <span>км</span></td>
-                <td class="about__table-td">4-5 <span>мин</span></td>
-                <td class="about__table-td">250 <span>тыс.дол</span></td>
-                <td class="about__table-td">99 <span>%</span></td>
+                <td aria-label = 'время в пути' class="about__table-td">10 <span>мин</span></td>
+                <td aria-label = 'расстояние' class="about__table-td">100 <span>км</span></td>
+                <td aria-label = 'в невесомости' class="about__table-td">4-5 <span>мин</span></td>
+                <td aria-label = 'стоимость' class="about__table-td">250 <span>тыс.дол</span></td>
+                <td aria-label = 'вернешься?' class="about__table-td">99 <span>%</span></td>
               </tr>
             </table>
-            <button class="button">Забронировать полет</button>
+            <button class="button about__btn">Забронировать полет</button>
           </div>
         </div>
-        <!--  -->
-
-        
+         
         <div class="about__item">
           <img class="about__img" src="./images/mask.jpg" alt="Elon Musk">
           <div class="about__content">
@@ -162,20 +164,20 @@
                 <td class="about__table-td">вернешься?</td>
               </tr>
               <tr class = 'about__table-tr'>
-                <td class="about__table-td">150 <span>дней</span></td>
-                <td class="about__table-td">55 <span>млн.км</span></td>
-                <td class="about__table-td">много <span>мин</span></td>
-                <td class="about__table-td">10 <span>млрд.дол</span></td>
-                <td class="about__table-td">1 <span>%</span></td>
+                <td aria-label = 'время в пути?' class="about__table-td">150 <span>дней</span></td>
+                <td aria-label = 'расстояние?' class="about__table-td">55 <span>млн.км</span></td>
+                <td aria-label = 'в невесомости?' class="about__table-td">много <span>мин</span></td>
+                <td aria-label = 'стоимость?' class="about__table-td">10 <span>млрд.дол</span></td>
+                <td aria-label = 'вернешься?' class="about__table-td">1 <span>%</span></td>
               </tr>
             </table>
-            <button class="button">Забронировать полет</button>
+            <button class="button about__btn">Забронировать полет</button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="how-to">
+     <section class="how-to">
       <div class="container">
         <h2 class="title">Как все <br> происходит</h2>
         <div class="how-to__box">
@@ -229,10 +231,19 @@
             </g>
             </svg>
         </div>
+        <ul class="how-to__list">
+          <li class="how-to__item">Выбираете программу</li>
+          <li class="how-to__item">Оплачиваете</li>
+          <li class="how-to__item">Какая-то будет подготовка</li>
+          <li class="how-to__item">Садимся. Летим. Невесомость</li>
+          <li class="how-to__item">Делаем фото в инстаграм</li>
+          <li class="how-to__item">Приземляемся, но это не точно</li>
+          <li class="how-to__item">Едим из тюбиков: 5 видов меню на выбор (веган, спорт, безлактозное, безглютеновое, обычное)</li>
+        </ul>
       </div>
     </section>
 <!--  -->
-<section class="to-book">
+ <section class="to-book"> 
   <div class="container">
     <div class="to-book__inner">
       <h2 class="title">
@@ -246,9 +257,9 @@
       </p>
     </div>
   </div>
-</section>
+</section> 
 <!--  -->
-<section class="info">
+ <section class="info">
 <div class="special-offer">
   <div class="container">
     <h2 class="title">
@@ -307,7 +318,7 @@
   </div>
 </div>
 
-<div class="slider">
+<div class="slider"> 
   <div class="container">
   <div class="slider__inner">
     <div class="slider__box">
@@ -327,9 +338,9 @@
   <p class="slider__description">Ты знаешь о Космическом законе – представь себе то, что ты хочешь, и оно войдет в твою жизнь.ß</p>
 </div>
 </div>
-</section>
+</section> 
 <!--  -->
-<section class="contacts">
+ <section class="contacts">
   <div class="container">
     <div class="contacts__inner">
       <div class="contacts__box">
@@ -357,8 +368,8 @@
       </div>
     </div>
   </div>
-</section>
-  </main>
+</section> 
+</main> 
 
   <footer class="footer">
     <div class="container">
